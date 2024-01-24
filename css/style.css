@@ -1,0 +1,204 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+header {
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(214, 46, 51 , 0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.menu-icon{
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.overlay .text h2{
+    font-size: 60px;
+}
+
+#menu{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#menu li .closeBtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#menu li a{
+    padding: 20px 8px 20px 32px;
+    display: block;
+    font-size: 20px;
+    transition: 0.3s;
+    color: white;
+}
+
+#menu li:hover a{
+    color: #801C1F;
+}
+
+/******************************************* details **************************************************/
+#details{
+    margin: 100px;
+}
+
+#details h3{
+    background-color: #E68285;
+    color: #fff;
+    padding: 7px ;
+    margin-bottom: 0;
+    border-bottom: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+
+#details p{
+    background-color: #CCCCCC;
+    margin:0;
+    padding: 10px;
+}
+
+/*********************************************** count ****************************************************/
+
+
+
+#count{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 330px;
+    position: relative;
+    margin: 100px 0px;
+}
+
+#count .overlay{
+    padding: 100px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(214, 46, 51 , 0.6);
+    color: #fff;
+
+}
+
+#count .overlay .time-remain{
+    padding: 50px;
+    border: 1px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/*********************************** contact ********************************/
+
+
+#contact {
+    margin: 100px 186px ;
+    padding-top: 60px;
+}
+
+#contact h2 , #contact h4{
+    color: #444444 ;
+    font-weight: 700;
+}
+
+#contact p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #777;
+}
+#contact .links li{
+    border: 1px solid #999;
+    color: #777;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#contact .links li:hover{
+    color: #fff;
+    background-color: #D62E33;
+}
+
+#contact .form-inputs input, #contact .form-inputs textarea {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+#contact .form-inputs span{
+    color: #D62E33;
+}
+
+
+#contact textarea {
+    height: 200px;
+}
+::placeholder{
+    font-size: 15px;
+    color: #777 !important;
+}
+
+#contact button {
+    background-color: #D62E33;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/*********************************************/
+
+@media (max-width:1200px){
+    #contact {
+        margin: 120px 18px ;
+        padding-top: 60px;
+    }
+    
+    #details{
+        margin: 100px 0px;
+    }
+}
